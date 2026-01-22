@@ -1,69 +1,70 @@
 import { motion } from 'framer-motion';
 
 
+
 const wishesRow1 = [
   { 
-    name: "Riya Sharma", 
-    relation: "Best Friend", 
-    message: "May your love grow stronger with each passing day. Wishing you a lifetime of happiness!", 
-    image: "https://images.unsplash.com/photo-1611432579699-484f7990b127?q=80&w=2070&auto=format&fit=crop" // Young Indian woman
+    name: "Mr. Nilkanth", 
+    relation: "Father", 
+    message: "My dear son, seeing you start this new chapter fills my heart with overwhelming pride. May you preserve the love you share forever. God bless you both!", 
+    image: "/images/blessing/papa.jpeg"
   },
   { 
-    name: "Mr. Vijay Sharma", 
-    relation: "Professor", 
-    message: "Watching Apoorva grow has been a delight. Wishing you both wisdom and endless happiness.", 
-    image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?q=80&w=2021&auto=format&fit=crop" // Elderly Indian man
+    name: "Mrs. Veena Ujjawalkar", 
+    relation: "Mother", 
+    message: "My heart overflows with joy seeing you happy. May your marriage be a beautiful journey of love and togetherness. God bless you always!", 
+    image: "/images/blessing/mummy-b.jpeg"
   },
   { 
-    name: "Rahul Verma", 
-    relation: "Childhood Friend", 
-    message: "From playground partners to witnessing your wedding. Congrats, Aman!", 
-    image: "https://images.unsplash.com/photo-1618641986557-1ecd230959aa?q=80&w=1974&auto=format&fit=crop" // Young Indian man
+    name: "Aman Ujjawalkar", 
+    relation: "Brother", 
+    message: "To my partner in crime and best friend - seeing you this happy makes me the happiest. Welcome to the family, bhabhi! Love you both.", 
+    image: "/images/blessing/bhai.jpeg"
   },
   { 
-    name: "Priya Gupta", 
-    relation: "College Friend", 
-    message: "So happy for you both! May your journey together be filled with beautiful moments.", 
-    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=1974&auto=format&fit=crop" // Young Indian woman
+    name: "Mr. Sumesh Sahu", 
+    relation: "Uncle (Chacha Ji)", 
+    message: "Watching you grow into this responsible man has been a joy. May your married life be filled with understanding, respect, and endless love.", 
+    image: "/images/blessing/chacha.jpeg"
   },
   { 
-    name: "Mrs. Kamla Devi", 
-    relation: "Grandmother", 
-    message: "Watching you grow up and now getting married fills my heart with joy. God bless!", 
-    image: "https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?q=80&w=2080&auto=format&fit=crop" // Elderly Indian woman
+    name: "Mrs. Sunita Sahu", 
+    relation: "Aunt (Chachi Ji)", 
+    message: "May your home always be filled with laughter and your hearts with affection. You two make a beautiful couple. Stay blessed always!", 
+    image: "/images/blessing/chachi.jpeg"
   },
 ];
 
 const wishesRow2 = [
   { 
-    name: "Anjali Gupta", 
-    relation: "Sister", 
-    message: "Can't wait to welcome my new brother! May your bond be eternal and your home filled with love.", 
-    image: "https://images.unsplash.com/photo-1609132718484-cc90df3417f8?q=80&w=1974&auto=format&fit=crop" // Young Indian woman
+    name: "Mrs. Sunita Sahu", 
+    relation: "Aunt (Chachi Ji)", 
+    message: "May your home always be filled with laughter and your hearts with affection. You two make a beautiful couple. Stay blessed always!", 
+    image: "/images/blessing/chachi.jpeg"
   },
   { 
-    name: "Mr. Ramesh Ji", 
-    relation: "Uncle", 
-    message: "May Lord bless this union with prosperity, love, and happiness. We are overjoyed!", 
-    image: "https://images.unsplash.com/photo-1545167622-3a6ac756afa4?q=80&w=2012&auto=format&fit=crop" // Elderly Indian man
+    name: "Mr. Sumesh Sahu", 
+    relation: "Uncle (Chacha Ji)", 
+    message: "Watching you grow into this responsible man has been a joy. May your married life be filled with understanding, respect, and endless love.", 
+    image: "/images/blessing/chacha.jpeg"
   },
   { 
-    name: "Neha & Karan", 
-    relation: "Couple Friends", 
-    message: "Marriage is a wonderful journey! Welcome to the club! May your story be beautiful.", 
-    image: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1974&auto=format&fit=crop" // Indian couple
+    name: "Aman Ujjawalkar", 
+    relation: "Brother", 
+    message: "To my partner in crime and best friend - seeing you this happy makes me the happiest. Welcome to the family, bhabhi! Love you both.", 
+    image: "/images/blessing/bhai.jpeg"
   },
   { 
-    name: "Mrs. Shanti Aunty", 
-    relation: "Family Elder", 
-    message: "May your lives together be healthy, happy, and filled with love. Blessings!", 
-    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1964&auto=format&fit=crop" // Elderly Indian woman
+    name: "Mrs. Veena Ujjawalkar", 
+    relation: "Mother", 
+    message: "My heart overflows with joy seeing you happy. May your marriage be a beautiful journey of love and togetherness. God bless you always!", 
+    image: "/images/blessing/mummy-b.jpeg"
   },
   { 
-    name: "Amit Kumar", 
-    relation: "Office Colleague", 
-    message: "Congratulations on finding your life partner. Wishing you both a wonderful married life!", 
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop" // Young Indian man
+    name: "Mr. Nilkanth", 
+    relation: "Father", 
+    message: "My dear son, seeing you start this new chapter fills my heart with overwhelming pride. May you preserve the love you share forever. God bless you both!", 
+    image: "/images/blessing/papa.jpeg"
   },
 ];
 
@@ -138,18 +139,39 @@ const WishCard = ({ wish }: { wish: typeof wishesRow1[0] }) => {
   );
 };
 
-const InfiniteScroll = ({ wishes }: { wishes: typeof wishesRow1 }) => {
+const InfiniteScroll = ({ wishes, direction }: { wishes: typeof wishesRow1; direction: 'left' | 'right' }) => {
+  // Duplicate 4 times to ensure we have enough content to scroll seamlessly
+  // The animation moves by exactly 25% (one set length) and then loops
+  const duplicatedWishes = [...wishes, ...wishes, ...wishes, ...wishes];
+
   return (
-    <div 
-      className="flex gap-8 overflow-x-auto py-2 px-4"
-      style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-    >
-      {wishes.map((wish, i) => (
-        <WishCard key={`${wish.name}-${i}`} wish={wish} />
-      ))}
+    <div className="w-full overflow-hidden relative group py-4">
+      {/* Gradients for smooth fade at edges */}
+      <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#1a0a0a] to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#1a0a0a] to-transparent z-10 pointer-events-none" />
+      
+      <motion.div 
+        className="flex gap-8 px-4 w-max"
+        animate={{
+          x: direction === 'left' ? ["0%", "-25%"] : ["-25%", "0%"]
+        }}
+        transition={{
+          x: {
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 30,
+            ease: "linear",
+          },
+        }}
+      >
+        {duplicatedWishes.map((wish, i) => (
+          <WishCard key={`${wish.name}-${i}`} wish={wish} />
+        ))}
+      </motion.div>
     </div>
   );
 };
+
 
 // Generate random bubbles configuration
 const bubbles = Array.from({ length: 20 }, (_, i) => ({
@@ -240,7 +262,7 @@ const Blessings = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <InfiniteScroll wishes={wishesRow1} />
+            <InfiniteScroll wishes={wishesRow1} direction="left" />
           </motion.div>
 
           <motion.div
@@ -248,7 +270,7 @@ const Blessings = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <InfiniteScroll wishes={wishesRow2} />
+            <InfiniteScroll wishes={wishesRow2} direction="right" />
           </motion.div>
         </div>
 

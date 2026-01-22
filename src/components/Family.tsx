@@ -18,6 +18,14 @@ const familyData = [
     caption: 'The proud family of Aman - Mr. Shivkumar Nirmalkar',
     description: 'A family bound by traditions, filled with warmth, and ready to welcome a new member.',
   },
+  {
+    id: 'family-friends',
+    image: '/images/family/family-friend.jpeg',
+    title: "Beloved Friends",
+    hindiTitle: 'स्नेही स्वजन',
+    caption: 'Parents\' cherished friends adding joy to our celebration',
+    description: 'Grateful for the love and blessings of friends who have become our extended family.',
+  },
 ];
 
 const Family = () => {
