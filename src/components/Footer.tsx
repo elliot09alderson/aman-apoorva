@@ -37,7 +37,7 @@ const Footer = () => {
           {/* Date & Venue */}
           <div className="flex flex-wrap justify-center gap-8 text-gray-500 font-inter text-sm mb-8">
             <span>📅 February 5th, 2026</span>
-            <span>📍 Hotel Reyansh Gold, Takhatpur, Balod (C.G.)</span>
+            <span>📍 Hotel Reyansh Gold, Takhatpur, Bilaspur (C.G.)</span>
           </div>
 
           {/* Divider */}

@@ -108,7 +108,7 @@ const EventPage = () => {
               <span className="text-2xl">📍</span>
               <div>
                 <p className="text-xs text-gray-500 uppercase tracking-widest">Venue</p>
-                <p className="font-playfair text-lg text-gray-800">Hotel Reyansh Gold, Takhatpur, Balod</p>
+                <p className="font-playfair text-lg text-gray-800">Hotel Reyansh Gold, Takhatpur, Bilaspur</p>
               </div>
             </div>
           </div>

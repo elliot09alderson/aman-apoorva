@@ -1,36 +1,36 @@
 import { motion } from 'framer-motion';
-import { useEffect, useRef } from 'react';
+
 
 const wishesRow1 = [
   { 
     name: "Riya Sharma", 
     relation: "Best Friend", 
     message: "May your love grow stronger with each passing day. Wishing you a lifetime of happiness!", 
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1611432579699-484f7990b127?q=80&w=2070&auto=format&fit=crop" // Young Indian woman
   },
   { 
     name: "Mr. Vijay Sharma", 
     relation: "Professor", 
     message: "Watching Apoorva grow has been a delight. Wishing you both wisdom and endless happiness.", 
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?q=80&w=2021&auto=format&fit=crop" // Elderly Indian man
   },
   { 
     name: "Rahul Verma", 
     relation: "Childhood Friend", 
     message: "From playground partners to witnessing your wedding. Congrats, Aman!", 
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1618641986557-1ecd230959aa?q=80&w=1974&auto=format&fit=crop" // Young Indian man
   },
   { 
     name: "Priya Gupta", 
     relation: "College Friend", 
     message: "So happy for you both! May your journey together be filled with beautiful moments.", 
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=1974&auto=format&fit=crop" // Young Indian woman
   },
   { 
-    name: "Mrs. Sunita", 
-    relation: "Neighbor Aunty", 
+    name: "Mrs. Kamla Devi", 
+    relation: "Grandmother", 
     message: "Watching you grow up and now getting married fills my heart with joy. God bless!", 
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?q=80&w=2080&auto=format&fit=crop" // Elderly Indian woman
   },
 ];
 
@@ -39,33 +39,34 @@ const wishesRow2 = [
     name: "Anjali Gupta", 
     relation: "Sister", 
     message: "Can't wait to welcome my new brother! May your bond be eternal and your home filled with love.", 
-    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1964&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1609132718484-cc90df3417f8?q=80&w=1974&auto=format&fit=crop" // Young Indian woman
   },
   { 
-    name: "Sharma Family", 
-    relation: "Relatives", 
+    name: "Mr. Ramesh Ji", 
+    relation: "Uncle", 
     message: "May Lord bless this union with prosperity, love, and happiness. We are overjoyed!", 
-    image: "https://images.unsplash.com/photo-1609619385076-36a873425636?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1545167622-3a6ac756afa4?q=80&w=2012&auto=format&fit=crop" // Elderly Indian man
   },
   { 
     name: "Neha & Karan", 
     relation: "Couple Friends", 
     message: "Marriage is a wonderful journey! Welcome to the club! May your story be beautiful.", 
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1974&auto=format&fit=crop" // Indian couple
   },
   { 
-    name: "Dr. Mehra", 
-    relation: "Family Doctor", 
+    name: "Mrs. Shanti Aunty", 
+    relation: "Family Elder", 
     message: "May your lives together be healthy, happy, and filled with love. Blessings!", 
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1964&auto=format&fit=crop" // Elderly Indian woman
   },
   { 
     name: "Amit Kumar", 
     relation: "Office Colleague", 
     message: "Congratulations on finding your life partner. Wishing you both a wonderful married life!", 
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop" // Young Indian man
   },
 ];
+
 
 // Falling Golden Bubble Component
 const FallingBubble = ({ delay, left, size, duration }: { delay: number; left: string; size: number; duration: number }) => {
@@ -137,54 +138,13 @@ const WishCard = ({ wish }: { wish: typeof wishesRow1[0] }) => {
   );
 };
 
-const InfiniteScroll = ({ wishes, direction }: { wishes: typeof wishesRow1; direction: 'left' | 'right' }) => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const scroll = scrollRef.current;
-    if (!scroll) return;
-
-    let animationId: number;
-    const speed = direction === 'left' ? 0.4 : -0.4;
-
-    const animate = () => {
-      if (!scroll) return;
-      
-      scroll.scrollLeft += speed;
-      
-      if (direction === 'left' && scroll.scrollLeft >= scroll.scrollWidth / 2) {
-        scroll.scrollLeft = 0;
-      } else if (direction === 'right' && scroll.scrollLeft <= 0) {
-        scroll.scrollLeft = scroll.scrollWidth / 2;
-      }
-      
-      animationId = requestAnimationFrame(animate);
-    };
-
-    animationId = requestAnimationFrame(animate);
-
-    const handleMouseEnter = () => cancelAnimationFrame(animationId);
-    const handleMouseLeave = () => { animationId = requestAnimationFrame(animate); };
-
-    scroll.addEventListener('mouseenter', handleMouseEnter);
-    scroll.addEventListener('mouseleave', handleMouseLeave);
-
-    return () => {
-      cancelAnimationFrame(animationId);
-      scroll.removeEventListener('mouseenter', handleMouseEnter);
-      scroll.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, [direction]);
-
-  const duplicatedWishes = [...wishes, ...wishes];
-
+const InfiniteScroll = ({ wishes }: { wishes: typeof wishesRow1 }) => {
   return (
     <div 
-      ref={scrollRef}
-      className="flex gap-8 overflow-x-hidden py-2 px-4"
+      className="flex gap-8 overflow-x-auto py-2 px-4"
       style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
     >
-      {duplicatedWishes.map((wish, i) => (
+      {wishes.map((wish, i) => (
         <WishCard key={`${wish.name}-${i}`} wish={wish} />
       ))}
     </div>
@@ -280,7 +240,7 @@ const Blessings = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <InfiniteScroll wishes={wishesRow1} direction="left" />
+            <InfiniteScroll wishes={wishesRow1} />
           </motion.div>
 
           <motion.div
@@ -288,7 +248,7 @@ const Blessings = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <InfiniteScroll wishes={wishesRow2} direction="right" />
+            <InfiniteScroll wishes={wishesRow2} />
           </motion.div>
         </div>
 

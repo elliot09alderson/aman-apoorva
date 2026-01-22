@@ -1,17 +1,19 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const categories = ["All", "Friends", "Cousins", "Relatives", "Children"];
+const categories = ["All", "Family", "Friends"];
 
 const images = [
-  { id: 1, category: "Friends", src: "https://images.unsplash.com/photo-1529636798458-92182e662485?q=80&w=2069&auto=format&fit=crop", name: "Riya & Priya" },
-  { id: 2, category: "Relatives", src: "https://images.unsplash.com/photo-1511285560982-1351c4f809b5?q=80&w=1760&auto=format&fit=crop", name: "Sharma Family" },
-  { id: 3, category: "Cousins", src: "https://images.unsplash.com/photo-1545389336-cf090694435e?q=80&w=1764&auto=format&fit=crop", name: "Ankit & Ankita" },
-  { id: 4, category: "Children", src: "https://images.unsplash.com/photo-1602631985686-1bb0e6a8696e?q=80&w=2070&auto=format&fit=crop", name: "Little Aarav" },
-  { id: 5, category: "Friends", src: "https://images.unsplash.com/photo-1596728328609-34444530bbdb?q=80&w=2060&auto=format&fit=crop", name: "College Gang" },
-  { id: 6, category: "Cousins", src: "https://images.unsplash.com/photo-1625296245847-f27329972322?q=80&w=2072&auto=format&fit=crop", name: "Rohan & Rhea" },
-  { id: 7, category: "Relatives", src: "https://images.unsplash.com/photo-1609151162236-ac5e0e0a2e6e?q=80&w=2071&auto=format&fit=crop", name: "Gupta Ji" },
-  { id: 8, category: "Friends", src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=2070&auto=format&fit=crop", name: "Besties Forever" },
+  // Family photos (f-1 to f-5)
+  { id: 1, category: "Family", src: "/images/family/f-1.jpeg", name: "परिवार" },
+  { id: 2, category: "Family", src: "/images/family/f-2.jpeg", name: "परिवार" },
+  { id: 3, category: "Family", src: "/images/family/f-3.jpeg", name: "परिवार" },
+  { id: 4, category: "Family", src: "/images/family/f-4.jpeg", name: "परिवार" },
+  { id: 5, category: "Family", src: "/images/family/f-5.jpeg", name: "परिवार" },
+  // Friends photos (friends-1 to friends-3)
+  { id: 6, category: "Friends", src: "/images/family/friends-1.jpeg", name: "मित्र" },
+  { id: 7, category: "Friends", src: "/images/family/friends-2.jpeg", name: "मित्र" },
+  { id: 8, category: "Friends", src: "/images/family/friends-3.jpeg", name: "मित्र" },
 ];
 
 // Fisher-Yates shuffle algorithm

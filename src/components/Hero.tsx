@@ -129,7 +129,7 @@ const Hero = () => {
             transition={{ delay: 2, duration: 1 }}
             className="mt-8 text-white/70 font-inter text-sm tracking-widest uppercase"
           >
-            <span className="text-wedding-gold">📍</span> Hotel Reyansh Gold, Takhatpur, Balod (C.G.)
+            <span className="text-wedding-gold">📍</span> Hotel Reyansh Gold, Takhatpur, Bilaspur (C.G.)
           </motion.p>
         </motion.div>
 

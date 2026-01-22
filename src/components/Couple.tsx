@@ -210,7 +210,7 @@ const Couple = () => {
               <div className="text-center mt-6">
                 <p className="text-wedding-gold font-playfair text-sm tracking-[0.2em] uppercase mb-1">The Groom</p>
                 <h3 className="text-4xl font-great-vibes text-white mb-2">Aman</h3>
-                <p className="text-white/40 font-inter text-xs tracking-widest uppercase">Son of Mr. Shivkumar Nirmalkar</p>
+                <p className="text-white/40 font-inter text-xs tracking-widest uppercase">Son of Mr. Shivkumar & Mrs. Sangeeta Nirmalkar</p>
               </div>
 
               {/* Quote */}
