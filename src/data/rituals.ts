@@ -18,7 +18,7 @@ export const rituals: Ritual[] = [
     title: "Mehndi",
     hindiTitle: "मेहंदी",
     date: "February 3rd, 2026",
-    time: "11:00 AM onwards",
+    time: "11:00 AM (Durg)",
     description: "Adorning hands with intricate henna designs, love, and laughter.",
     longDescription: "The Mehndi ceremony is a beautiful pre-wedding ritual where the bride's hands and feet are decorated with intricate henna patterns. This celebration is filled with music, dance, and joy as family and friends come together to bless the bride.",
     image: "/images/events/mehndi.jpg",

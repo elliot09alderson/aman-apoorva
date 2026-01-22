@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const categories = ["All", "Family", "Friends"];
+const categories = ["All", "Family", "Friends", "Bride", "Groom"];
 
 const images = [
   // Family photos (f-1 to f-5)
@@ -14,6 +14,18 @@ const images = [
   { id: 6, category: "Friends", src: "/images/family/friends-1.jpeg", name: "मित्र" },
   { id: 7, category: "Friends", src: "/images/family/friends-2.jpeg", name: "मित्र" },
   { id: 8, category: "Friends", src: "/images/family/friends-3.jpeg", name: "मित्र" },
+  // Bride photos
+  { id: 9, category: "Bride", src: "/images/bride/b-1.jpeg", name: "The Bride" },
+  { id: 10, category: "Bride", src: "/images/bride/b-2.jpeg", name: "The Bride" },
+  { id: 11, category: "Bride", src: "/images/bride/b-3.jpeg", name: "The Bride" },
+  { id: 12, category: "Bride", src: "/images/bride/b-4.jpeg", name: "The Bride" },
+  { id: 13, category: "Bride", src: "/images/bride/b-5.jpeg", name: "The Bride" },
+  { id: 14, category: "Bride", src: "/images/bride/b-6.jpeg", name: "The Bride" },
+  // Groom photos
+  { id: 15, category: "Groom", src: "/images/grrom/g-1.jpeg", name: "The Groom" },
+  { id: 16, category: "Groom", src: "/images/grrom/g-2.jpeg", name: "The Groom" },
+  { id: 17, category: "Groom", src: "/images/grrom/g-4.jpeg", name: "The Groom" },
+  { id: 18, category: "Groom", src: "/images/grrom/g-5.jpeg", name: "The Groom" },
 ];
 
 // Fisher-Yates shuffle algorithm

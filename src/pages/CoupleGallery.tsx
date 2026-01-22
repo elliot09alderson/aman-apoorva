@@ -38,14 +38,15 @@ const galleryData = {
     subtitle: "Our Beautiful Moments",
     images: [
       "/images/together-1.jpeg",
-      "/images/together-2.jpeg",
+
       "/images/together-3.jpeg",
       "/images/together-4.jpeg",
       "/images/together-5.jpeg",
       "/images/together-6.jpeg",
-      "/images/together-7.jpeg",
       "/images/together-8.jpeg",
       "/images/together-9.jpeg",
+      "/images/together-10.jpeg",
+      "/images/together-11.jpeg",
     ],
     color: "from-wedding-gold to-amber-600",
   },
