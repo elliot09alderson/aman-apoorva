@@ -6,7 +6,7 @@ const wishesRow1 = [
   { 
     name: "Mr. Nilkanth", 
     relation: "Father", 
-    message: "My dear son, seeing you start this new chapter fills my heart with overwhelming pride. May you preserve the love you share forever. God bless you both!", 
+    message: "My dear daughter, seeing you start this new chapter fills my heart with overwhelming pride. May you preserve the love you share forever. God bless you both!", 
     image: "/images/blessing/papa.jpeg"
   },
   { 
@@ -63,7 +63,7 @@ const wishesRow2 = [
   { 
     name: "Mr. Nilkanth", 
     relation: "Father", 
-    message: "My dear son, seeing you start this new chapter fills my heart with overwhelming pride. May you preserve the love you share forever. God bless you both!", 
+    message: "My dear daughter, seeing you start this new chapter fills my heart with overwhelming pride. May you preserve the love you share forever. God bless you both!", 
     image: "/images/blessing/papa.jpeg"
   },
 ];
